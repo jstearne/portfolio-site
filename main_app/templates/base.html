@@ -20,6 +20,12 @@
 
 <!--jQuery for BULMA-->
 <script>
+ 
+
+
+/* 
+ORIGINAL FROM SPOTIFY:
+
   $(".modal-button").click(function() {
      var target = $(this).data("target");
      $("html").addClass("is-clipped");
@@ -30,6 +36,8 @@
      $("html").removeClass("is-clipped");
      $(this).parent().removeClass("is-active");
   });
+
+*/  
 </script>
 
 
@@ -42,166 +50,153 @@
 
 <!--BULMA: Navbar-->
 <!--mobile-->
-<body>
-  <div id="app">
-    
-<nav class="nav has-shadow">
-  <div class="container">
-    <div class="nav-left">
-      <a class="nav-item">
-        Website
-      </a>
-    </div>
-    <label for="menu-toggle" class="nav-toggle">
-      <span></span>
-      <span></span>
-      <span></span>
-    </label>
-    <input type="checkbox" id="menu-toggle" class="is-hidden"/>
-    <div class="nav-right nav-menu">
-      <a class="nav-item is-tab is-hidden-tablet">
-        <span class="icon"><i class="fa fa-home"></i></span> Home
-      </a>
-      <a class="nav-item is-tab is-hidden-tablet">
-        <span class="icon"><i class="fa fa-table"></i></span> Links
-      </a>
-      <a class="nav-item is-tab is-hidden-tablet">
-        <span class="icon"><i class="fa fa-info"></i></span> About
-      </a>
-      
-      <a class="nav-item is-tab is-active">
-        <span class="icon"><i class="fa fa-user"></i></span>
-      </a>
-      <a class="nav-item is-tab">
-        <span class="icon"><i class="fa fa-sign-out"></i></span>
-      </a>
-    </div>
-  </div>
-</nav>
-
-<!--SIDEBAR BULMA DESKTOP (primary)-->
-<section class="main-content columns is-fullheight">
-  
-  <aside class="column is-one-fifth is-narrow-mobile is-fullheight section is-hidden-mobile">
-    <p class="menu-label is-hidden-touch">Navigation</p>
-    <ul class="menu-list">
-      <li>
-        <a href="#" class="">
-          <span class="icon"><i class="fa fa-code"></i></span> Github
-        </a>
-      </li>
-      <li>
-        <a href="#" class="is-active">
-          <span class="icon"><i class="fa fa-address-card"></i></span> Resume
-        </a>
-
-        <ul>
-          <li>
-            <a href="#">
-              <span class="icon is-small"><i class="fa fa-link"></i></span> Standard
+  <body>
+    <div id="app">
+          
+      <nav class="nav has-shadow">
+        <div class="container">
+          <div class="nav-left">
+            <a class="nav-item">
+              Website
             </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="icon is-small"><i class="fa fa-link"></i></span> Verbose
+          </div>
+          <label for="menu-toggle" class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <input type="checkbox" id="menu-toggle" class="is-hidden"/>
+          <div class="nav-right nav-menu">
+            <a class="nav-item is-tab is-hidden-tablet">
+              <span class="icon"><i class="fa fa-home"></i></span> Home
             </a>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <a href="#" class="">
-          <span class="icon"><i class="fa fa-user-plus"></i></span> Linkedin
-        </a>
-      </li>
+            <a class="nav-item is-tab is-hidden-tablet">
+              <span class="icon"><i class="fa fa-table"></i></span> Links
+            </a>
+            <a class="nav-item is-tab is-hidden-tablet">
+              <span class="icon"><i class="fa fa-info"></i></span> About
+            </a>
+            
+            <a class="nav-item is-tab is-active">
+              <span class="icon"><i class="fa fa-user"></i></span>
+            </a>
+            <a class="nav-item is-tab">
+              <span class="icon"><i class="fa fa-sign-out"></i></span>
+            </a>
+          </div>
+        </div>
+      </nav>
 
-      <li>
-        <a href="mailto:jared.stearne@gmail.com" class="">
-          <span class="icon"><i class="fa fa-user-plus"></i></span> EMAIL
-        </a>
-      </li>
-    </ul>
-  </aside>
+      <!--SIDEBAR BULMA DESKTOP (primary)-->
+      <section class="main-content columns is-fullheight">
+        <aside class="column is-one-fifth is-narrow-mobile is-fullheight section is-hidden-mobile">
+          <p class="menu-label is-hidden-touch">Navigation</p>
+          <ul class="menu-list">
+            <li>
+              <a href="#" class="">
+                <span class="icon"><i class="fa fa-code"></i></span> Github
+              </a>
+            </li>
+            <li>
+              <a href="#" class="is-active">
+                <span class="icon"><i class="fa fa-address-card"></i></span> Resume
+              </a>
+
+              <ul>
+                <li>
+                  <a href="#">
+                    <span class="icon is-small"><i class="fa fa-link"></i></span> Standard
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="icon is-small"><i class="fa fa-link"></i></span> Verbose
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="">
+                <span class="icon"><i class="fa fa-user-plus"></i></span> Linkedin
+              </a>
+            </li>
+
+            <li>
+              <a href="mailto:jared.stearne@gmail.com" class="">
+                <span class="icon"><i class="fa fa-user-plus"></i></span> EMAIL
+              </a>
+            </li>
+          </ul>
+        </aside>
+      </section>
+        <!--END SIDEBAR-->
 
 
-<!--Mainpage content (erase?)-->
-  <div class="container column is-10">
-    <div class="section">
+        <!--Mainpage content (erase?)-->
+        <div class="container column is-10">
+          <div class="section">
 
-      <!--jQuery button test-->
-      <div class="card">
-        <div class="card-header"><p class="card-header-title">Header</p></div>
+            <!--jQuery button test-->
+            <div id="modal" class="modal"> <!--have to make this active to launch modal-->
+              <div class="modal-background"></div><!--Dim background-->
+              <div class="modal-content">
+                <div class="box"> 
+                  <article class="media">
+                    <div class="media-left">
+                      <figure class="image is-64x64">
+                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
+                      </figure>
+                    </div>
+            
+                    <div class="media-content">
+                      <div class="content">
+                        <p>
+            
+                          <strong>Modal</strong> <small>Basic Demo</small>
+            
+                          <br>
+            
+                          The content for the modal comes here. You may use text, images, buttons etc. here.
+            
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <button class="modal-close is-large" aria-label="close"></button>
+            </div>
+            <button class="button is-danger is-large" id="lanuchModal">Show Modal</button>
+            
+            <!--Bulma button with jQuery-->
+            <script>
+              /* Thanks jquery-az for this: https://www.jquery-az.com/bulma-modal/ */
+ 
+              $("#lanuchModal").click(function() {
+                $(".modal").addClass("is-active"); 
+              });
 
-        <div class="card-content">
-          <div class="content">Content<br>
-            <!--MODAL BUTTON-->
-
+              $(".modal-close").click(function() {
+                $(".modal").removeClass("is-active");
+              });
+            </script>               
 
           </div>
         </div>
-      </div>
-      <br />
-      
-      <div class="card is-hidden1">
-        <div class="card-header"><p class="card-header-title">Header</p></div>
-        <div class="card-content"><div class="content">Content</div></div>
-      </div>
-      <br />
-      
-      <div class="card is-hidden1">
-        <div class="card-header"><p class="card-header-title">Header</p></div>
-        <div class="card-content"><div class="content">Content</div></div>
-      </div>
-      <br />
-      
-      <div class="card is-hidden1">
-        <div class="card-header"><p class="card-header-title">Header</p></div>
-        <div class="card-content"><div class="content">Content</div></div>
-      </div>
-      <br />
-      
-      <div class="card is-hidden1">
-        <div class="card-header"><p class="card-header-title">Header</p></div>
-        <div class="card-content"><div class="content">Content</div></div>
-      </div>
-      <br />
-      
-      <div class="card is-hidden1">
-        <div class="card-header"><p class="card-header-title">Header</p></div>
-        <div class="card-content"><div class="content">Content</div></div>
-      </div>
-      <br />
-      
+        <!--END MODAL-->
     </div>
-  </div>
-  
-</section>
+  </body>
+  <!--BULMA: Navbar-->
 
-<footer class="footer is-hidden">
-  <div class="container">
-    <div class="content has-text-centered">
-      <p>Hello</p>
-    </div>
-  </div>
-</footer>
-    
-  </div>
-</body>
-<!--BULMA: Navbar-->
+  <header>Welcome to my portfolio page!</header>
+  <br>
+  <br>
 
+  {% block content %} {% endblock %}
 
-
-
-
-
-<header>Welcome to my portfolio page!</header>
-<br>
-<br>
-
-{% block content %} {% endblock %}
-
-<br>
-<br> 
-  <footer style="position: fixed; bottom: 0;">
-    Jared Stearne, 2021
+  <br>
+  <br> 
+    <footer style="position: fixed; bottom: 0;">
+      Jared Stearne, 2021
   </footer>
 </html>
