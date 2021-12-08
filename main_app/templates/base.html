@@ -10,10 +10,14 @@
 <script src = "https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
 <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
-<!-- fontawesome CDN -->
-  <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
-  <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
-  <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
+
+
+<!-- fontawesome CDN - unnecessary?
+<link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+<link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
+<link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
+-->
+
 <!--jQuery for BULMA-->
 <script>
   $(".modal-button").click(function() {
@@ -37,7 +41,7 @@
 
 
 <!--BULMA: Navbar-->
-<html>
+<!--mobile-->
 <body>
   <div id="app">
     
@@ -75,10 +79,10 @@
   </div>
 </nav>
 
-<!--SIDEBAR BULMA-->
+<!--SIDEBAR BULMA DESKTOP (primary)-->
 <section class="main-content columns is-fullheight">
   
-  <aside class="column is-2 is-narrow-mobile is-fullheight section is-hidden-mobile">
+  <aside class="column is-one-fifth is-narrow-mobile is-fullheight section is-hidden-mobile">
     <p class="menu-label is-hidden-touch">Navigation</p>
     <ul class="menu-list">
       <li>
@@ -88,25 +92,31 @@
       </li>
       <li>
         <a href="#" class="is-active">
-          <span class="icon"><i class="fa fa-table"></i></span> Links
+          <span class="icon"><i class="fa fa-address-card"></i></span> Resume
         </a>
 
         <ul>
           <li>
             <a href="#">
-              <span class="icon is-small"><i class="fa fa-link"></i></span> Link1
+              <span class="icon is-small"><i class="fa fa-link"></i></span> Standard
             </a>
           </li>
           <li>
             <a href="#">
-              <span class="icon is-small"><i class="fa fa-link"></i></span> Link2
+              <span class="icon is-small"><i class="fa fa-link"></i></span> Verbose
             </a>
           </li>
         </ul>
       </li>
       <li>
         <a href="#" class="">
-          <span class="icon"><i class="fa fa-info"></i></span> About
+          <span class="icon"><i class="fa fa-user-plus"></i></span> Linkedin
+        </a>
+      </li>
+
+      <li>
+        <a href="mailto:jared.stearne@gmail.com" class="">
+          <span class="icon"><i class="fa fa-user-plus"></i></span> EMAIL
         </a>
       </li>
     </ul>
@@ -117,9 +127,17 @@
   <div class="container column is-10">
     <div class="section">
 
+      <!--jQuery button test-->
       <div class="card">
         <div class="card-header"><p class="card-header-title">Header</p></div>
-        <div class="card-content"><div class="content">Content</div></div>
+
+        <div class="card-content">
+          <div class="content">Content<br>
+            <!--MODAL BUTTON-->
+
+
+          </div>
+        </div>
       </div>
       <br />
       
