@@ -86,6 +86,7 @@ button {
 
                         </p>
                       </div>
+                      <button class="button is-danger is-outlined is-large is-pulled-right" id="closebtn-about">Close Modal</button>
                     </div>
                   </article>
                 </div>
@@ -107,6 +108,10 @@ button {
               $(".modal-close").click(function() {
                 $(".modal").removeClass("is-active");
               });
+
+              $("#closebtn-about").click(function() {
+                $(".modal").removeClass("is-active");
+              });
             </script>               
           <!--END ABOUT ME LINK-->
 
@@ -117,7 +122,7 @@ button {
               </a>
             </li> -->                
 
-            <div id="modal" class="modal"> <!--have to make this active to launch modal-->
+            <div id="modal-tech" class="modal"> <!--have to make this active to launch modal-->
               <div class="modal-background"></div><!--Dim background-->
                 <div class="modal-content">
                   <!--Actual modal format and content-->
@@ -141,6 +146,7 @@ button {
 
                           </p>
                         </div>
+                        <button class="button is-danger is-outlined is-large is-pulled-right" id="closebtn-tech">Close Modal</button>
                       </div>
                     </article>
                   </div>
@@ -148,19 +154,21 @@ button {
                 </div>
                 <button class="modal-close is-large" aria-label="close"></button>
               </div>
-              <button class="button is-primary is-outlined is-large" id="lanuchModal">
+              <button class="button is-primary is-outlined is-large" id="lanuchModal-tech">
                 <span class="icon"><i class="fa fa-cogs"></i></span>&nbsp;&nbsp;Technologies
               </button>
 
               <!--Bulma button with jQuery-->
               <script>
-                /* Thanks jquery-az for this: https://www.jquery-az.com/bulma-modal/ */
-
-                $("#lanuchModal").click(function() {
-                  $(".modal").addClass("is-active"); 
+                $("#lanuchModal-tech").click(function() {
+                  $("#modal-tech").addClass("is-active"); 
                 });
 
                 $(".modal-close").click(function() {
+                  $(".modal").removeClass("is-active");
+                });
+              
+                $("#closebtn-tech").click(function() {
                   $(".modal").removeClass("is-active");
                 });
               </script>               
