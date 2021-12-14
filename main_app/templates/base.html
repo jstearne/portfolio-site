@@ -95,7 +95,8 @@ button {
               <button class="modal-close is-large" aria-label="close"></button>
             </div>
             <button class="button is-primary is-outlined is-large" id="lanuchModal-about">
-              <span class="icon"><i class="fa fa-male"></i></span>&nbsp;&nbsp;About Me
+              <span class="icon"><i class="fa fa-male"></i></span>
+              <span>About Me</span>
             </button>
 
             <script>
@@ -115,13 +116,7 @@ button {
             </script>               
           <!--END ABOUT ME LINK-->
 
-          <!--TECHNOLOGIES-->
-            <!-- <li>
-              <a href="#" class="">
-                <span class="icon"><i class="fa fa-cogs"></i></span>&nbsp;&nbsp;Technologies
-              </a>
-            </li> -->                
-
+          <!--TECHNOLOGIES-->             
             <div id="modal-tech" class="modal"> <!--have to make this active to launch modal-->
               <div class="modal-background"></div><!--Dim background-->
                 <div class="modal-content">
@@ -155,10 +150,10 @@ button {
                 <button class="modal-close is-large" aria-label="close"></button>
               </div>
               <button class="button is-primary is-outlined is-large" id="lanuchModal-tech">
-                <span class="icon"><i class="fa fa-cogs"></i></span>&nbsp;&nbsp;Technologies
+                <span class="icon"><i class="fa fa-cogs"></i></span><span>Technologies</span>
               </button>
 
-              <!--Bulma button with jQuery-->
+              <!--Bulma technology modal button with jQuery-->
               <script>
                 $("#lanuchModal-tech").click(function() {
                   $("#modal-tech").addClass("is-active"); 
@@ -172,19 +167,32 @@ button {
                   $(".modal").removeClass("is-active");
                 });
               </script>               
-              <!--END Bulma button with jQuery-->
-
-
+              <!--END Bulma -->
           <!--END TECHNOLOGIES-->
-
-
-
           
             <li>
-              <a href="#" class="">
-                <span class="icon"><i class="fa fa-code"></i></span>&nbsp;&nbsp;Github
-              </a>
+              <button class="button is-primary is-outlined is-large" id="lanuchModal-tech">
+                <span class="icon"><i class="fab fa-github"></i></span>
+                <span>github</span>
+              </button>
+
+
+
+
+
+              <button class="button is-large is-primary is-outlined">
+                
+                <span class="icon is-large">
+                  <a href="https://github.com/jstearne" target="_blank"><i class="fab fa-github"></i></a>
+                </span>
+                <a href="https://github.com/jstearne" target="_blank"><span>GitHub</span></a>
+              
+              </button>
+              
+
+
             </li>
+
             <li>
               <a href="#" class="is-active">
                 <span class="icon"><i class="fa fa-address-card"></i></span>&nbsp;&nbsp;Resume
