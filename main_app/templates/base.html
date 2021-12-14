@@ -16,7 +16,7 @@
 <style>
 a {
   font-size: x-large;
-  margin-top: 2vh;
+  margin-top: 1vh;
 }
 button {
   margin-top: 1vh;
@@ -114,9 +114,9 @@ button {
                 $(".modal").removeClass("is-active");
               });
             </script>               
-          <!--END ABOUT ME LINK-->
+            <!--END ABOUT ME LINK-->
 
-          <!--TECHNOLOGIES-->             
+            <!--TECHNOLOGIES-->             
             <div id="modal-tech" class="modal"> <!--have to make this active to launch modal-->
               <div class="modal-background"></div><!--Dim background-->
                 <div class="modal-content">
@@ -168,46 +168,33 @@ button {
                 });
               </script>               
               <!--END Bulma -->
-          <!--END TECHNOLOGIES-->
+            <!--END TECHNOLOGIES-->
           
-          <!--Github-->
-            <li>
-              
-
-              <a href="https://github.com/jstearne" target="_blank" class="button is-primary is-outlined is-large">
-                <span class="icon"><i class="fab fa-github"></i></span><span>github</span>
-              </a>
-
-
-
-
-
+            <!--Github-->
+            <li><!--Fixed button width, still collapses on mobile but doesn't break on wide desktops!-->
+              <a href="https://github.com/jstearne" target="_blank" class="button is-primary is-outlined is-large" style="padding-top: 5px; text-align: justify; width: 180px;">
+                <span class="icon"><i class="fab fa-github"></i></span><span>My Github</span></a>
             </li>
 
+            <!--resume: link to hosted PDF-->
             <li>
-              <a href="#" class="is-active">
-                <span class="icon"><i class="fa fa-address-card"></i></span>&nbsp;&nbsp;Resume
-              </a>
+              <a href="path_to_file" download="proposed_file_name"  class="button is-primary is-outlined is-large" style="padding-top: 5px; text-align: justify; width: 155px;">
+                <span class="icon"><i class="fa fa-file"></i></span><span>Resume</span></a>
             </li>
+            <!--linkedin-->
             <li>
-              <a href="#" class="">
-                <span class="icon"><i class="fa fa-user-plus"></i></span>&nbsp;&nbsp;Linkedin
-              </a>
+              <a href="https://www.linkedin.com/in/jared-stearne" target="_blank" class="button is-primary is-outlined is-large" style="padding-top: 5px; text-align: justify; width: 160px;">
+                <span class="icon"><i class="fa fa-user-plus"></i></span><span>Linkedin</span></a>
             </li>
-
+            <!--email-->
             <li>
-              <a href="mailto:jared.stearne@gmail.com" class="">
-                <span class="icon"><i class="fa fa-reply"></i></span>&nbsp;&nbsp;EMAIL
-              </a>
+              <a href="mailto:jared.stearne@gmail.com" class="button is-primary is-outlined is-large" style="padding-top: 5px; text-align: justify; width: 170px;">
+                <span class="icon"><i class="fa fa-reply"></i></span><span>Email Me</span></a>
             </li>
           </ul>
         </aside>
       </section>
         <!--END SIDEBAR-->
-
-
-
-            
     </div>
   </body>
   <!--BULMA: Navbar-->
