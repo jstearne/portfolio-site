@@ -25,43 +25,47 @@ button {
 </style>
 <!--BULMA: Navbar-->
 
-  <body>
-    <div id="app">
-          <!--mobile-only display-->
-      <nav class="nav has-shadow">
-        <div class="container">
-          <div class="nav-left"></div>
-          <label for="menu-toggle" class="nav-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
-          <input type="checkbox" id="menu-toggle" class="is-hidden"/>
-          <div class="nav-right nav-menu">
-            <a class="nav-item is-tab is-hidden-tablet">
-              <span class="icon"><i class="fa fa-code"></i></span> Min-Github
-            </a>
-            <a class="nav-item is-tab is-hidden-tablet">
-              <span class="icon"><i class="fa fa-address-card"></i></span> Min-Resume
-            </a>
-            <a class="nav-item is-tab is-hidden-tablet">
-              <span class="icon"><i class="fa fa-user-plus"></i></span> Min-Linkedin
-            </a>
-            <a class="nav-item is-tab is-hidden-tablet">
-              <span class="icon"><i class="fa fa-reply"></i></span> Min-Email
-            </a>
-          </div>
+<body>
+  <div id="app">
+        <!--mobile-only display-->
+    <nav class="nav has-shadow">
+      <div class="container">
+        <div class="nav-left"></div>
+        <label for="menu-toggle" class="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <input type="checkbox" id="menu-toggle" class="is-hidden"/>
+        <div class="nav-right nav-menu">
+          <a class="nav-item is-tab is-hidden-tablet">
+            <span class="icon"><i class="fa fa-code"></i></span> Min-Github
+          </a>
+          <a class="nav-item is-tab is-hidden-tablet">
+            <span class="icon"><i class="fa fa-address-card"></i></span> Min-Resume
+          </a>
+          <a class="nav-item is-tab is-hidden-tablet">
+            <span class="icon"><i class="fa fa-user-plus"></i></span> Min-Linkedin
+          </a>
+          <a class="nav-item is-tab is-hidden-tablet">
+            <span class="icon"><i class="fa fa-reply"></i></span> Min-Email
+          </a>
         </div>
-      </nav>
+      </div>
+    </nav>
 
-      <!--FORMAT SIDEBAR BULMA DESKTOP (primary)-->
+    <!--FORMAT SIDEBAR BULMA DESKTOP (primary)-->
+
+<!--TEST-->
+    <div class="column"> 
       <section class="main-content columnsfifth is-fullheight">
-        <aside class="column is-one-fifth is-narrow-desktop is-fullheight section is-hidden-mobile">
+        <div class="column is-one-fifth is-narrow-desktop is-fullheight section is-hidden-mobile">
           <p class="menu-label is-hidden-touch">Navigation</p>
           <ul class="menu-list">
 
 
           <!--ABOUT ME LINK-->
+          <div class="column is-one-third"> 
             <div id="modal-about" class="modal"> <!--have to make this active to launch modal-->
               <div class="modal-background"></div><!--Dim background-->
               <div class="modal-content">
@@ -192,12 +196,22 @@ button {
                 <span class="icon"><i class="fa fa-reply"></i></span><span>Email Me</span></a>
             </li>
           </ul>
-        </aside>
-      </section>
-        <!--END SIDEBAR-->
+        </div>
+        <div class="column is-two-thirds">
+Main body section?
+
+        </div>
+
+    
+
+      <!--END SIDEBAR-->
+
+
+
     </div>
-  </body>
-  <!--BULMA: Navbar-->
+  </div>
+</body>
+<!--BULMA: Navbar-->
 
   <header>Welcome to my portfolio page!</header>
   <br>
@@ -207,7 +221,30 @@ button {
 
   <br>
   <br> 
-    <footer style="position: fixed; bottom: 0;">
+
       Jared Stearne, 2021
-  </footer>
+
+
+<!--
+  Get your vision in order, THEN complete this site! 
+  Already deployed, don't rush. Get it right.
+-->
+
+
+
+
+      <footer style="position: fixed; bottom: 0;">
+        <section class="hero is-warning">
+          <div class="hero-body">
+            <p class="title">
+              Warning hero
+            </p>
+            <p class="subtitle">
+              Warning subtitle
+            </p>
+          </div>
+        </section>
+      </footer>
+
+
 </html>
