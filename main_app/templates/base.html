@@ -30,70 +30,71 @@ button {
 
 <body>
   <div id="app"><!--Entire website-->
-    <div class="columns"> <!--Website format: two columns-->
+    <div class="columns is-vcentered"> <!--Website format: two columns, vertically centered-->
       <div class="column is-one-third is-narrow-desktop is-fullheight section is-hidden-mobile"> <!--First column: one-third screensize, hidden on mobile-->
         <p class="menu-label is-hidden-touch">Navigation</p>
         <ul class="menu-list">
-
           <!--ABOUT ME LINK-->
-          <div id="modal-about" class="modal"> <!--have to make this active to launch modal-->
-            <div class="modal-background"></div><!--Dim background, cannot move close div-->
-            <div class="modal-content">
-              <!--Actual modal format and content-->
-              <div class="box"> 
-                <article class="media">
-                  <div class="media-left">
-                    <figure class="image is-64x64">
-                      <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
-                    </figure>
-                  </div>
-                  <!--Actual Modal content goes below-->
-                  <div class="media-content">
-                    <div class="content">
-                      <p>
-
-                        <strong>About Me</strong> <small>All the basics fit for print</small>
-
-                        <br>
-
-                        The content for the modal comes here. You may use text, images, buttons etc. here.
-
-                      </p>
+          <li> 
+            <div id="modal-about" class="modal"> <!--have to make this active to launch modal-->
+              <div class="modal-background"></div><!--Dim background, cannot move close div-->
+              <div class="modal-content">
+                <!--Actual modal format and content-->
+                <div class="box"> 
+                  <article class="media">
+                    <div class="media-left">
+                      <figure class="image is-64x64">
+                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
+                      </figure>
                     </div>
-                    <button class="button is-danger is-outlined is-large is-pulled-right" id="closebtn-about">Close Modal</button>
-                  </div>
-                </article>
+                    <!--Actual Modal content goes below-->
+                    <div class="media-content">
+                      <div class="content">
+                        <p>
+
+                          <strong>About Me</strong> <small>All the basics fit for print</small>
+
+                          <br>
+
+                          The content for the modal comes here. You may use text, images, buttons etc. here.
+
+                        </p>
+                      </div>
+                      <button class="button is-danger is-outlined is-large is-pulled-right" id="closebtn-about">Close Modal</button>
+                    </div>
+                  </article>
+                </div>
+                <!--End modal content/format-->
               </div>
-              <!--End modal content/format-->
+              <button class="modal-close is-large" aria-label="close"></button>
             </div>
-            <button class="modal-close is-large" aria-label="close"></button>
-          </div>
-          <button class="button is-primary is-outlined is-large" id="lanuchModal-about">
-            <span class="icon"><i class="fa fa-male"></i></span>
-            <span>About Me</span>
-          </button>
+            <button class="button is-primary is-outlined is-large" id="lanuchModal-about">
+              <span class="icon"><i class="fa fa-male"></i></span>
+              <span>About Me</span>
+            </button>
 
-          <script>
-            /* Thanks jquery-az for this: https://www.jquery-az.com/bulma-modal/ */
+            <script>
+              /* Thanks jquery-az for this: https://www.jquery-az.com/bulma-modal/ */
 
-            $("#lanuchModal-about").click(function() {
-              $("#modal-about").addClass("is-active"); 
-            });
+              $("#lanuchModal-about").click(function() {
+                $("#modal-about").addClass("is-active"); 
+              });
 
-            $(".modal-close").click(function() {
-              $(".modal").removeClass("is-active");
-            });
+              $(".modal-close").click(function() {
+                $(".modal").removeClass("is-active");
+              });
 
-            $("#closebtn-about").click(function() {
-              $(".modal").removeClass("is-active");
-            });
-          </script>               
-          <!--END ABOUT ME LINK-->
-
-          <!--TECHNOLOGIES-->             
-          <div id="modal-tech" class="modal"> <!--have to make this active to launch modal-->
-            <div class="modal-background"></div><!--Dim background-->
-            <div class="modal-content">
+              $("#closebtn-about").click(function() {
+                $(".modal").removeClass("is-active");
+              });
+            </script>               
+            <!--END ABOUT ME LINK-->
+          </li>
+          <li>
+            <!--TECHNOLOGIES-->   <!--is flex, making it not work properly-->          
+            <div id="modal-tech" class="modal"> <!--have to make this active to launch modal-->
+              <div class="modal-background"></div><!--Dim background-->
+              <div class="modal-content">
                 <!--Actual modal format and content-->
                 <div class="box"> 
                   <article class="media">
@@ -120,13 +121,14 @@ button {
                   </article>
                 </div>
                 <!--End modal content/format-->
+              </div>
+              <button class="modal-close is-large" aria-label="close"></button>
             </div>
-            <button class="modal-close is-large" aria-label="close"></button>
-          </div>
-          <button class="button is-primary is-outlined is-large" id="lanuchModal-tech">
-            <span class="icon"><i class="fa fa-cogs"></i></span><span>Technologies</span>
-          </button>
-
+            <button class="button is-primary is-outlined is-large" id="lanuchModal-tech">
+              <span class="icon"><i class="fa fa-cogs"></i></span>
+              <span>Technologies</span>
+            </button>
+          </li>
           <!--Bulma technology modal button with jQuery-->
           <script>
             $("#lanuchModal-tech").click(function() {
@@ -168,17 +170,14 @@ button {
       </div><!--End Column One: SIDEBAR-->
 
       <!--Second column, main body-->
-      <div class="column is-two-thirds">
+      <div class="column is-half">
+        
         <!--Bulma carousel by -->
-
-
-
-
-
         <section class="hero is-medium has-carousel">
           <div id="carousel-demo" class="hero-carousel">
             <div class="item-1">
               <!-- Slide Content --><img src="https://i.natgeofe.com/n/3faa2b6a-f351-4995-8fff-36d145116882/domestic-dog_16x9.jpg">
+              <p>Sample Text</p>
             </div>
             <div class="item-2">
               <!-- Slide Content --><img src="https://media.npr.org/assets/img/2021/08/06/dog-4415649_wide-3ef4f36fb94397991ee6721a5c6929451178d914.jpg?s=1400">
@@ -187,8 +186,8 @@ button {
               <!-- Slide Content --><img src="https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/322868_1100-800x825.jpg">
             </div>
           </div>
-          <div class="hero-head">My Projects</div>
-          <div class="hero-body">Project xyz</div>
+          <div class="hero-head">My Projects</div><!--not showing up?-->
+          <div class="hero-body">Some of my work</div>
           <div class="hero-foot">See Github for more!</div>
         </section>
        
