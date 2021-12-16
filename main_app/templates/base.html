@@ -169,36 +169,41 @@ button {
 
       <!--Second column, main body-->
       <div class="column is-two-thirds">
-        <!--main content space taking image or text here-->
+        <!--Bulma carousel by -->
 
 
-        <section class="section">
-          <div class="container">
-            <!-- Start Carousel -->
-            <div id="carousel-demo" class="carousel">
-              <div class="item-1">
-                <!-- Slide Content --><img src="https://i.natgeofe.com/n/3faa2b6a-f351-4995-8fff-36d145116882/domestic-dog_16x9.jpg">
-              </div>
-              <div class="item-2">
-                <!-- Slide Content -->
-              </div>
-              <div class="item-3">
-                <!-- Slide Content -->
-              </div>
+
+
+
+        <section class="hero is-medium has-carousel">
+          <div id="carousel-demo" class="hero-carousel">
+            <div class="item-1">
+              <!-- Slide Content --><img src="https://i.natgeofe.com/n/3faa2b6a-f351-4995-8fff-36d145116882/domestic-dog_16x9.jpg">
             </div>
-            <!-- End Carousel -->
+            <div class="item-2">
+              <!-- Slide Content --><img src="https://media.npr.org/assets/img/2021/08/06/dog-4415649_wide-3ef4f36fb94397991ee6721a5c6929451178d914.jpg?s=1400">
+            </div>
+            <div class="item-3">
+              <!-- Slide Content --><img src="https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/322868_1100-800x825.jpg">
+            </div>
           </div>
+          <div class="hero-head">My Projects</div>
+          <div class="hero-body">Project xyz</div>
+          <div class="hero-foot">See Github for more!</div>
         </section>
+       
     
         <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
         <script>
         bulmaCarousel.attach('#carousel-demo', {
           slidesToScroll: 1,
-          slidesToShow: 1
+          slidesToShow: 1,
+          loop: true,
+          autoplay: true,
+          autoplaySpeed: 3000,
         });
         </script>
         
-
       </div>
       <!--End Column Two-->
   
