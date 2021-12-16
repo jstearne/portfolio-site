@@ -27,102 +27,20 @@ button {
 
 <body>
   <div id="app">
-        <!--mobile-only display-->
-    <nav class="nav has-shadow">
-      <div class="container">
-        <div class="nav-left"></div>
-        <label for="menu-toggle" class="nav-toggle">
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
-        <input type="checkbox" id="menu-toggle" class="is-hidden"/>
-        <div class="nav-right nav-menu">
-          <a class="nav-item is-tab is-hidden-tablet">
-            <span class="icon"><i class="fa fa-code"></i></span> Min-Github
-          </a>
-          <a class="nav-item is-tab is-hidden-tablet">
-            <span class="icon"><i class="fa fa-address-card"></i></span> Min-Resume
-          </a>
-          <a class="nav-item is-tab is-hidden-tablet">
-            <span class="icon"><i class="fa fa-user-plus"></i></span> Min-Linkedin
-          </a>
-          <a class="nav-item is-tab is-hidden-tablet">
-            <span class="icon"><i class="fa fa-reply"></i></span> Min-Email
-          </a>
-        </div>
-      </div>
-    </nav>
-
-    <!--FORMAT SIDEBAR BULMA DESKTOP (primary)-->
-
-<!--TEST-->
-    <div class="column"> 
-      <section class="main-content columnsfifth is-fullheight">
-        <div class="column is-one-fifth is-narrow-desktop is-fullheight section is-hidden-mobile">
-          <p class="menu-label is-hidden-touch">Navigation</p>
-          <ul class="menu-list">
 
 
-          <!--ABOUT ME LINK-->
-          <div class="column is-one-third"> 
-            <div id="modal-about" class="modal"> <!--have to make this active to launch modal-->
-              <div class="modal-background"></div><!--Dim background-->
-              <div class="modal-content">
-                <!--Actual modal format and content-->
-                <div class="box"> 
-                  <article class="media">
-                    <div class="media-left">
-                      <figure class="image is-64x64">
-                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
-                      </figure>
-                    </div>
-                    <!--Actual Modal content goes below-->
-                    <div class="media-content">
-                      <div class="content">
-                        <p>
+<!--Two columns-->
+    <div class="columns"> 
+      <div class="column is-one-third is-narrow-desktop is-fullheight section is-hidden-mobile"> <!--First column: one-third screensize, hidden on mobile-->
 
-                          <strong>About Me</strong> <small>All the basics fit for print</small>
+            <p class="menu-label is-hidden-touch">Navigation</p>
+            <ul class="menu-list">
 
-                          <br>
 
-                          The content for the modal comes here. You may use text, images, buttons etc. here.
-
-                        </p>
-                      </div>
-                      <button class="button is-danger is-outlined is-large is-pulled-right" id="closebtn-about">Close Modal</button>
-                    </div>
-                  </article>
-                </div>
-                <!--End modal content/format-->
-              </div>
-              <button class="modal-close is-large" aria-label="close"></button>
-            </div>
-            <button class="button is-primary is-outlined is-large" id="lanuchModal-about">
-              <span class="icon"><i class="fa fa-male"></i></span>
-              <span>About Me</span>
-            </button>
-
-            <script>
-              /* Thanks jquery-az for this: https://www.jquery-az.com/bulma-modal/ */
-
-              $("#lanuchModal-about").click(function() {
-                $("#modal-about").addClass("is-active"); 
-              });
-
-              $(".modal-close").click(function() {
-                $(".modal").removeClass("is-active");
-              });
-
-              $("#closebtn-about").click(function() {
-                $(".modal").removeClass("is-active");
-              });
-            </script>               
-            <!--END ABOUT ME LINK-->
-
-            <!--TECHNOLOGIES-->             
-            <div id="modal-tech" class="modal"> <!--have to make this active to launch modal-->
-              <div class="modal-background"></div><!--Dim background-->
+            <!--ABOUT ME LINK-->
+            
+              <div id="modal-about" class="modal"> <!--have to make this active to launch modal-->
+                <div class="modal-background"></div><!--Dim background-->
                 <div class="modal-content">
                   <!--Actual modal format and content-->
                   <div class="box"> 
@@ -137,7 +55,7 @@ button {
                         <div class="content">
                           <p>
 
-                            <strong>Technologies</strong> <small>Skills I have experience with</small>
+                            <strong>About Me</strong> <small>All the basics fit for print</small>
 
                             <br>
 
@@ -145,7 +63,7 @@ button {
 
                           </p>
                         </div>
-                        <button class="button is-danger is-outlined is-large is-pulled-right" id="closebtn-tech">Close Modal</button>
+                        <button class="button is-danger is-outlined is-large is-pulled-right" id="closebtn-about">Close Modal</button>
                       </div>
                     </article>
                   </div>
@@ -153,50 +71,106 @@ button {
                 </div>
                 <button class="modal-close is-large" aria-label="close"></button>
               </div>
-              <button class="button is-primary is-outlined is-large" id="lanuchModal-tech">
-                <span class="icon"><i class="fa fa-cogs"></i></span><span>Technologies</span>
+              <button class="button is-primary is-outlined is-large" id="lanuchModal-about">
+                <span class="icon"><i class="fa fa-male"></i></span>
+                <span>About Me</span>
               </button>
 
-              <!--Bulma technology modal button with jQuery-->
               <script>
-                $("#lanuchModal-tech").click(function() {
-                  $("#modal-tech").addClass("is-active"); 
+                /* Thanks jquery-az for this: https://www.jquery-az.com/bulma-modal/ */
+
+                $("#lanuchModal-about").click(function() {
+                  $("#modal-about").addClass("is-active"); 
                 });
 
                 $(".modal-close").click(function() {
                   $(".modal").removeClass("is-active");
                 });
-              
-                $("#closebtn-tech").click(function() {
+
+                $("#closebtn-about").click(function() {
                   $(".modal").removeClass("is-active");
                 });
               </script>               
-              <!--END Bulma -->
-            <!--END TECHNOLOGIES-->
-          
-            <!--Github-->
-            <li><!--Fixed button width, still collapses on mobile but doesn't break on wide desktops!-->
-              <a href="https://github.com/jstearne" target="_blank" class="button is-primary is-outlined is-large" style="padding-top: 5px; text-align: justify; width: 180px;">
-                <span class="icon"><i class="fab fa-github"></i></span><span>My Github</span></a>
-            </li>
+              <!--END ABOUT ME LINK-->
 
-            <!--resume: link to hosted PDF-->
-            <li>
-              <a href="path_to_file" download="proposed_file_name"  class="button is-primary is-outlined is-large" style="padding-top: 5px; text-align: justify; width: 155px;">
-                <span class="icon"><i class="fa fa-file"></i></span><span>Resume</span></a>
-            </li>
-            <!--linkedin-->
-            <li>
-              <a href="https://www.linkedin.com/in/jared-stearne" target="_blank" class="button is-primary is-outlined is-large" style="padding-top: 5px; text-align: justify; width: 160px;">
-                <span class="icon"><i class="fa fa-user-plus"></i></span><span>Linkedin</span></a>
-            </li>
-            <!--email-->
-            <li>
-              <a href="mailto:jared.stearne@gmail.com" class="button is-primary is-outlined is-large" style="padding-top: 5px; text-align: justify; width: 170px;">
-                <span class="icon"><i class="fa fa-reply"></i></span><span>Email Me</span></a>
-            </li>
-          </ul>
-        </div>
+              <!--TECHNOLOGIES-->             
+              <div id="modal-tech" class="modal"> <!--have to make this active to launch modal-->
+                <div class="modal-background"></div><!--Dim background-->
+                  <div class="modal-content">
+                    <!--Actual modal format and content-->
+                    <div class="box"> 
+                      <article class="media">
+                        <div class="media-left">
+                          <figure class="image is-64x64">
+                            <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
+                          </figure>
+                        </div>
+                        <!--Actual Modal content goes below-->
+                        <div class="media-content">
+                          <div class="content">
+                            <p>
+
+                              <strong>Technologies</strong> <small>Skills I have experience with</small>
+
+                              <br>
+
+                              The content for the modal comes here. You may use text, images, buttons etc. here.
+
+                            </p>
+                          </div>
+                          <button class="button is-danger is-outlined is-large is-pulled-right" id="closebtn-tech">Close Modal</button>
+                        </div>
+                      </article>
+                    </div>
+                    <!--End modal content/format-->
+                  </div>
+                  <button class="modal-close is-large" aria-label="close"></button>
+                </div>
+                <button class="button is-primary is-outlined is-large" id="lanuchModal-tech">
+                  <span class="icon"><i class="fa fa-cogs"></i></span><span>Technologies</span>
+                </button>
+
+                <!--Bulma technology modal button with jQuery-->
+                <script>
+                  $("#lanuchModal-tech").click(function() {
+                    $("#modal-tech").addClass("is-active"); 
+                  });
+
+                  $(".modal-close").click(function() {
+                    $(".modal").removeClass("is-active");
+                  });
+                
+                  $("#closebtn-tech").click(function() {
+                    $(".modal").removeClass("is-active");
+                  });
+                </script>               
+                <!--END Bulma -->
+              <!--END TECHNOLOGIES-->
+            
+              <!--Github-->
+              <li><!--Fixed button width, still collapses on mobile but doesn't break on wide desktops!-->
+                <a href="https://github.com/jstearne" target="_blank" class="button is-primary is-outlined is-large" style="padding-top: 5px; text-align: justify; width: 180px;">
+                  <span class="icon"><i class="fab fa-github"></i></span><span>My Github</span></a>
+              </li>
+
+              <!--resume: link to hosted PDF-->
+              <li>
+                <a href="path_to_file" download="proposed_file_name"  class="button is-primary is-outlined is-large" style="padding-top: 5px; text-align: justify; width: 155px;">
+                  <span class="icon"><i class="fa fa-file"></i></span><span>Resume</span></a>
+              </li>
+              <!--linkedin-->
+              <li>
+                <a href="https://www.linkedin.com/in/jared-stearne" target="_blank" class="button is-primary is-outlined is-large" style="padding-top: 5px; text-align: justify; width: 160px;">
+                  <span class="icon"><i class="fa fa-user-plus"></i></span><span>Linkedin</span></a>
+              </li>
+              <!--email-->
+              <li>
+                <a href="mailto:jared.stearne@gmail.com" class="button is-primary is-outlined is-large" style="padding-top: 5px; text-align: justify; width: 170px;">
+                  <span class="icon"><i class="fa fa-reply"></i></span><span>Email Me</span></a>
+              </li>
+            </ul>
+          </div>
+        </section>
         <div class="column is-two-thirds">
 Main body section?
 
