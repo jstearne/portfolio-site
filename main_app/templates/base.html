@@ -26,72 +26,68 @@ button {
 <!--BULMA: Navbar-->
 
 <body>
-  <div id="app">
-
+  <div id="app"><!--Entire website-->
 
 <!--Two columns-->
-    <div class="columns"> 
+    <div class="columns"> <!--Website format: two columns-->
       <div class="column is-one-third is-narrow-desktop is-fullheight section is-hidden-mobile"> <!--First column: one-third screensize, hidden on mobile-->
+        <p class="menu-label is-hidden-touch">Navigation</p>
+        <ul class="menu-list">
 
-            <p class="menu-label is-hidden-touch">Navigation</p>
-            <ul class="menu-list">
-
-
-            <!--ABOUT ME LINK-->
-            
-              <div id="modal-about" class="modal"> <!--have to make this active to launch modal-->
-                <div class="modal-background"></div><!--Dim background-->
-                <div class="modal-content">
-                  <!--Actual modal format and content-->
-                  <div class="box"> 
-                    <article class="media">
-                      <div class="media-left">
-                        <figure class="image is-64x64">
-                          <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
-                        </figure>
-                      </div>
-                      <!--Actual Modal content goes below-->
-                      <div class="media-content">
-                        <div class="content">
-                          <p>
-
-                            <strong>About Me</strong> <small>All the basics fit for print</small>
-
-                            <br>
-
-                            The content for the modal comes here. You may use text, images, buttons etc. here.
-
-                          </p>
-                        </div>
-                        <button class="button is-danger is-outlined is-large is-pulled-right" id="closebtn-about">Close Modal</button>
-                      </div>
-                    </article>
+          <!--ABOUT ME LINK-->
+          <div id="modal-about" class="modal"> <!--have to make this active to launch modal-->
+            <div class="modal-background"></div><!--Dim background, cannot move close div-->
+            <div class="modal-content">
+              <!--Actual modal format and content-->
+              <div class="box"> 
+                <article class="media">
+                  <div class="media-left">
+                    <figure class="image is-64x64">
+                      <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
+                    </figure>
                   </div>
-                  <!--End modal content/format-->
-                </div>
-                <button class="modal-close is-large" aria-label="close"></button>
+                  <!--Actual Modal content goes below-->
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+
+                        <strong>About Me</strong> <small>All the basics fit for print</small>
+
+                        <br>
+
+                        The content for the modal comes here. You may use text, images, buttons etc. here.
+
+                      </p>
+                    </div>
+                    <button class="button is-danger is-outlined is-large is-pulled-right" id="closebtn-about">Close Modal</button>
+                  </div>
+                </article>
               </div>
-              <button class="button is-primary is-outlined is-large" id="lanuchModal-about">
-                <span class="icon"><i class="fa fa-male"></i></span>
-                <span>About Me</span>
-              </button>
+              <!--End modal content/format-->
+            </div>
+            <button class="modal-close is-large" aria-label="close"></button>
+          </div>
+          <button class="button is-primary is-outlined is-large" id="lanuchModal-about">
+            <span class="icon"><i class="fa fa-male"></i></span>
+            <span>About Me</span>
+          </button>
 
-              <script>
-                /* Thanks jquery-az for this: https://www.jquery-az.com/bulma-modal/ */
+          <script>
+            /* Thanks jquery-az for this: https://www.jquery-az.com/bulma-modal/ */
 
-                $("#lanuchModal-about").click(function() {
-                  $("#modal-about").addClass("is-active"); 
-                });
+            $("#lanuchModal-about").click(function() {
+              $("#modal-about").addClass("is-active"); 
+            });
 
-                $(".modal-close").click(function() {
-                  $(".modal").removeClass("is-active");
-                });
+            $(".modal-close").click(function() {
+              $(".modal").removeClass("is-active");
+            });
 
-                $("#closebtn-about").click(function() {
-                  $(".modal").removeClass("is-active");
-                });
-              </script>               
-              <!--END ABOUT ME LINK-->
+            $("#closebtn-about").click(function() {
+              $(".modal").removeClass("is-active");
+            });
+          </script>               
+          <!--END ABOUT ME LINK-->
 
               <!--TECHNOLOGIES-->             
               <div id="modal-tech" class="modal"> <!--have to make this active to launch modal-->
