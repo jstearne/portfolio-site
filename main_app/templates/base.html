@@ -41,39 +41,85 @@
       }
     </style>
 
-<br><br>
-  <div class="text-center"> 
-    <div class="btn-group" role="group" aria-label="Basic example">
-      <button type="button" class="btn btn-outline-light btn-lg"><h1>About</h1></button>
-      <button type="button" class="btn btn-outline-light btn-lg"><h1>Projects</h1></button>
-      <button type="button" class="btn btn-outline-light btn-lg"><h1>Github</h1></button>
-    </div>
-  </div>  
+    <br><br>
+    <!--Button grouped in container at center-->
+    <div class="text-center"> 
+      <div class="btn-group" role="group" aria-label="Triple Modal">
+        
+        <!--TRIGGER ABOUT MODAL-->
+        <button type="button" class="btn btn-outline-light btn-lg" data-bs-toggle="modal" data-bs-target="#aboutModal"><h1>About</h1></button>
+        
+        <!--ABOUT Modal contents-->
+        <div class="modal fade" id="aboutModal" tabindex="-1" aria-labelledby="aboutModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">About Me!</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                I'm the best! That's it in a nutshell.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div><!--contents end-->
+        
+        
+        <!--TRIGGER PROJECTS MODAL-->
+        <button type="button" class="btn btn-outline-light btn-lg" data-bs-toggle="modal" data-bs-target="#projectsModal"><h1>Projects</h1></button>
+        
+        <!--PROJECTS Modal contents-->
+        <div class="modal fade" id="projectsModal" tabindex="-1" aria-labelledby="projectsModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">My Projects</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <!--Carousel-->
 
 
-    <!--EXAMPLE Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button>
 
-<!--EXAMPLE Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-xl modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div><!--contents end-->
+        
+
+
+        <!--TRIGGER GITHUB MODAL-->
+        <button type="button" class="btn btn-outline-light btn-lg" data-bs-toggle="modal" data-bs-target="#githubModal"><h1>Github</h1></button>
+        
+        <!--GITHUB Modal contents-->
+        <div class="modal fade" id="githubModal" tabindex="-1" aria-labelledby="githubModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">My Github</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                Link here!
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div><!--contents end-->
+        
+
       </div>
-      <div class="modal-body">
-        Content: the best!
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-
+    </div>  
   </body>
 </html>
