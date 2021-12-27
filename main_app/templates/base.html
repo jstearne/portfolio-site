@@ -25,7 +25,8 @@
       html, body {
         width: 100%;
         height:100%;
-        min-width: 1000px;
+        min-width: 800px;
+        min-height: 600px;
       }
       h1 {
         color: white;
@@ -62,7 +63,7 @@
       }
       .btn:hover {
         background-color: navy;
-        transform: scale(1.4) perspective(1px);
+        transform: scale(1.2) perspective(1px);
       }
       i {
         font-size: 72px;
@@ -98,7 +99,7 @@
         flex-shrink: 0;
         width: 100%;
         box-sizing: border-box;
-        padding: 5px;
+        padding: 0px;
         text-align: center; 
       }
       
@@ -106,9 +107,9 @@
       /* 4 ITEMS -400%, CHANGE THIS IF YOU ADD/REMOVE ITEMS */
       @keyframes skill-ticker {
         0% { transform: translate3d(100%, 0, 0); }
-        100% { transform: translate3d(-400%, 0, 0); }
+        100% { transform: translate3d(-700%, 0, 0); }
       }
-      .ticker-scroll { animation: skill-ticker linear 20s infinite; }
+      .ticker-scroll { animation: skill-ticker linear 25s infinite; }
       .ticker-scroll:hover { animation-play-state: paused; }
       /* constantly moves until on-hover...can I slow it instead? */
       
@@ -124,19 +125,29 @@
         <!--Three groups of icons: first cluster (JS-oriented)-->
         <div class="tick-item"> 
           <i class="devicon-python-plain-wordmark"></i>
-          <i class="devicon-javascript-plain"></i> 
+          <i class="devicon-javascript-plain"></i>   
+        </div>
+
+        <div class="tick-item"> 
           <i class="devicon-react-original-wordmark"></i> 
-          <i class="devicon-nodejs-plain-wordmark"></i>
           <i class="devicon-jquery-plain-wordmark"></i>
         </div>
+        
         
         <!--second cluster-->
         <h5 style="font-size: 66px; color: white;"> data </h5>
         <div class="tick-item"> 
           <i class="devicon-express-original-wordmark"></i>
           <i class="devicon-django-plain-wordmark"></i>
+        </div>
+
+        <div class="tick-item"> 
           <i class="devicon-postgresql-plain-wordmark"></i>
           <i class="devicon-mongodb-plain-wordmark"></i>
+        </div>
+
+        <div class="tick-item"> 
+          <i class="devicon-nodejs-plain-wordmark"></i>
           <i class="devicon-git-plain-wordmark"></i>
         </div>
 
@@ -145,16 +156,18 @@
         <div class="tick-item"> 
           <i class="devicon-html5-plain-wordmark"></i>
           <i class="devicon-css3-plain-wordmark"></i>
-          <i class="devicon-bootstrap-plain-wordmark"></i>
-          <i class="devicon-bulma-plain"></i>
-          <i class="devicon-heroku-line-wordmark"></i>        
         </div>
         
+        <div class="tick-item"> 
+          <i class="devicon-bootstrap-plain-wordmark"></i>
+          <i class="devicon-bulma-plain"></i>  
+        </div>
+
       </div>
     </div>
     <!--TICKER SCROLL END-->
 
-    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br>
     <!--Button grouped in container at center-->
     <div class="text-center"> 
       <div class="btn-group" role="group" aria-label="Triple Modal">
@@ -304,7 +317,7 @@
               </div>
               <div class="modal-body">
                 <!--RESUME PDF EMBED-->
-                <iframe src="https://drive.google.com/file/d/1o3ykV08fwCiDjaLF1epz1XuS756iaNdt/preview#view=FitH" width="720" height="720" allow="autoplay"></iframe>
+                <iframe src="https://drive.google.com/file/d/1o3ykV08fwCiDjaLF1epz1XuS756iaNdt/preview#view=FitH" width="600" height="600" allow="autoplay"></iframe>
               </div>
               <div class="modal-footer">
                 <!--git button and icon-->
