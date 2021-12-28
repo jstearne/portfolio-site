@@ -82,11 +82,26 @@
       p {
         color: black;
       }
-
       i {
         font-size: 72px;
         padding: 150px;
         color: whitesmoke;
+      }
+      .carousel-control-prev-icon,
+      .carousel-control-next-icon {
+        /* necessary to prevent double arrows */
+        background-image: none;
+      }
+      .carousel-control-next-icon:after {
+        content: '>';
+        font-size: 72px;
+        color: grey;
+      }
+
+      .carousel-control-prev-icon:after {
+        content: '<';
+        font-size: 72px;
+        color: grey;
       }
 
       @keyframes gradient {
